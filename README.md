@@ -4,9 +4,6 @@ Kunskapskontroll för kurs i DeepLearning programmering
 Mappen "pdfs" innehåller alla lagar som jag hämtade hem från tjänsten Juno.
 
 
-.env innehåller API nyckel
-
-
 app.py är min Streamlit applikation och den senaste versionen av mitt arbete.
 
 
