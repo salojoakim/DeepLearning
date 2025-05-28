@@ -1,0 +1,51 @@
+Del 1: 
+Teoretiska frågor
+
+
+1. Hur är AI, Maskininlärning och Deep Learning relaterat? 
+AI (Artificiell intelligens) är ett område inom mjukvaruutveckling där det handlar om att skapa system/modeller som kan efterlikna och utföra mänskliga uppgifter. AI är “topp nivån” av de olika nämnda områden. Maskininlärning är en del av AI och Deep learning är en del av Maskininlärning. Maskininlärning syftar på system som kan läras sig av data och förbättras över tid. Deep learning använder sig av neuronnät för att lära sig mönster i stora mängder av data.
+
+
+2. Hur är Tensorflow och Keras relaterat? 
+Tensorflow och Keras är verktyg inom Deep learning. Tensorflow är verktyget som ofta utför beräkningar i bakgrunden medans Keras är ett användarvänligt API som används för att skapa modeller. Med andra ord, Keras bygger modellerna medans Tensorflow tränar modellerna.
+
+
+3. Vad är en parameter? Vad är en hyperparameter? 
+Hyperparametrar sätts innan vi tränar modellen. Hyperparametrar bestämmer hur modellen ska tränas och kan användas för att kalibrera en modell. En parameter är output från under träningen som modellen lär sig.
+
+
+4. När man skall göra modellval och modellutvärdering kan man använda tränings-, validerings- och testdataset. Förklara hur de olika delarna kan användas. 
+Träningsdelen används för att träna och lära modellen. Valideringsdelen används för att validera modellen på träningsdatan. Modellen ska inte lära sig från valideringsdatan utan den kan t.ex. användas för att kalibrera hyperparametrar. Eter att du validerat och tränat din modell kan du göra ett test på testdatan. Testet ger en uppfattning om hurvida bra din modell presterar gentemot verkligheten.
+
+
+5. Förklara vad nedanstående kod gör: n_cols = x_train.shape[1] nn_model = Sequential() nn_model.add(Dense(100, activation='relu', input_shape=(n_cols, ))) nn_model.add(Dropout(rate=0.2)) nn_model.add(Dense(50, activation='relu')) nn_model.add(Dense(1, activation='sigmoid')) nn_model.compile( optimizer='adam', loss='binary_crossentropy', metrics=['accuracy' ]) early_stopping_monitor = EarlyStopping(patience=5) nn_model.fit( x_train, y_train, validation_split=0.2, epochs=100, callbacks=[early_stopping_monitor]) 1 
+Koden representerar skapandet av ett neuralt nätverk för klassificiering, med två dolda lager, dropout samt early stopping. 
+
+
+6. Vad är syftet med att regularisera en modell? 
+Regularisering hjälper till vid ny osedd data för att undvika overfitting.
+
+
+7. ”Dropout” är en regulariseringsteknik, vad är det för något? 
+Med hjälp av “Dropout” kan du stänga av/droppa en andel av neuroner under träning för att minska overfitting.
+
+
+8. ”Early stopping” är en regulariseringsteknik, vad är det för något? 
+“Early stopping” är som det låter, ett tidigt stopp under träning när förbättring inte längre sker.
+
+
+9. Din kollega frågar dig vilken typ av neuralt nätverk som är populärt för bildanalys, vad svarar du? 
+Convolutional Neural Networks (CNN)
+
+
+10. Förklara översiktligt hur ett ”Convolutional Neural Network” fungerar. 
+CNN identifierar mönster, som är även kallat för convolution. Mönstrerna körs via aktiveringsfunktioner för att sedan gå igenom ett så kallat poolinglayer som tar ut det viktigaste från resultatet av convolution. Detta sker flera gånger.
+
+
+11. Vad gör nedanstående kod? model.save("model_file.keras") my_model = load_model("model_file.keras") 
+Sparar hela modellen för att sedan ladda in modellen.
+
+
+12. Deep Learning modeller kan ta lång tid att träna, då kan GPU via t.ex. Google Colab skynda på träningen avsevärt. Skriv mycket kortfattat vad CPU och GPU är.
+CPU = Central processing unit. GPU = Graphics Processing unit. CPU kan hantera olika typer av beräkningar fast ofta en i taget medans GPU kan hantera flera beräkningar samtidigt.
+
