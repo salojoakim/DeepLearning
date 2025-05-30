@@ -32,7 +32,7 @@ pdf_texts = [
     extract_text_from_pdf("pdfs/SemesterLag.pdf"),
 ]
 
-# Kombinerar alla våra 6 lag texter till en lång textsträng för att sedan kunna dela upp den i chunks
+# Kombinerar alla mina 6 lag texter till en lång textsträng för att sedan kunna dela upp den i chunks
 all_text = "\n\n".join(pdf_texts)
 
 # Nu skapar jag en funktion för att dela upp hela textsträngen i mindre bitar (max 1000 char) och detta görs pga begränsat minne i Gemini
