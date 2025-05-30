@@ -1,5 +1,5 @@
 # DeepLearning
-Kunskapskontroll för kurs i DeepLearning programmering
+Kunskapskontroll för kurs i DeepLearning programmering - Svensk Juridikbot inom Arbetsrätt
 
 Mappen "pdfs" innehåller alla lagar som jag hämtade hem från tjänsten Juno.
 
